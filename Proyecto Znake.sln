@@ -1,9 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "design sign up", "design sign up\design sign up.csproj", "{3058D2F9-D1CB-4277-AB84-0AAAD9A00B7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontEnd_Znake", "design sign up\FrontEnd_Znake.csproj", "{3058D2F9-D1CB-4277-AB84-0AAAD9A00B7A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7441C608-78E1-4796-B495-6E726221FC89} = {7441C608-78E1-4796-B495-6E726221FC89}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades_Znake", "Entidades_Znake\Entidades_Znake.csproj", "{0F103E7C-5641-41BC-B697-25B751EE6AA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica_Znake", "Logica_Znake\Logica_Znake.csproj", "{7441C608-78E1-4796-B495-6E726221FC89}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0F103E7C-5641-41BC-B697-25B751EE6AA4} = {0F103E7C-5641-41BC-B697-25B751EE6AA4}
+		{697E0A1F-4D92-4826-9085-C178725ADD25} = {697E0A1F-4D92-4826-9085-C178725ADD25}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos(SQLConnection)_Znake", "Datos(SQLConnection)_Znake\Datos(SQLConnection)_Znake.csproj", "{697E0A1F-4D92-4826-9085-C178725ADD25}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0F103E7C-5641-41BC-B697-25B751EE6AA4} = {0F103E7C-5641-41BC-B697-25B751EE6AA4}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +31,18 @@ Global
 		{3058D2F9-D1CB-4277-AB84-0AAAD9A00B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3058D2F9-D1CB-4277-AB84-0AAAD9A00B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3058D2F9-D1CB-4277-AB84-0AAAD9A00B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F103E7C-5641-41BC-B697-25B751EE6AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F103E7C-5641-41BC-B697-25B751EE6AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F103E7C-5641-41BC-B697-25B751EE6AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F103E7C-5641-41BC-B697-25B751EE6AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7441C608-78E1-4796-B495-6E726221FC89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7441C608-78E1-4796-B495-6E726221FC89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7441C608-78E1-4796-B495-6E726221FC89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7441C608-78E1-4796-B495-6E726221FC89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697E0A1F-4D92-4826-9085-C178725ADD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697E0A1F-4D92-4826-9085-C178725ADD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697E0A1F-4D92-4826-9085-C178725ADD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697E0A1F-4D92-4826-9085-C178725ADD25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
