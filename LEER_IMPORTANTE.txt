@@ -1,0 +1,21 @@
+Aclaraciones Importantes:
+Las actualizaciones respectivas del proyecto znake se realizaran dentro de un branch(rama) separado de cada uno, asi que los commit y push NO SE DEBEN REALIZAR EN EL MAIN, mas que todo para evitar errores de compilacion, alteraciones, desorden o conflictos que afecten al codigo original.
+
+SI NO SABES COMO CREAR UN NUEVO BRANH(RAMA), NECESARIO PREGUNTAR A CHATGPT, GEMINI O INVESTIGAR POR CUENTA PROPIA
+
+BIBLIOTECAS DE ZNAKE:
+El proyecto posee 4 bibliotecas distintas:
+-FrontEnd
+-Datos
+-Entidades
+-Logica
+
+FrontEnd: En esa biblioteca solo se encontrara el diseño grafico por lo que queda prohibido, añadir Lógica, entidades o conexiones de sql a la biblioteca para evitar conflictos posteriores además de priorizar el orden y la efectividad de este.
+
+Datos: Dentro de este apartado se realizara exclusivamente la conexión a SQL server
+
+Entidades: Serán las clases del sistema (POO), se anadiran objetos y clases con sus respectivos parámetros
+
+Lógica: La lógica se encargara de todo el código lógico de las clases, objetos, etc.
+
+ES IMPORTANTE SEGUIR LA LOGICA DE LAS BIBLIOTECAS POR LO QUE TENER BASTANTE CUIDADO AL AÑADIR ACTUALIZACIONES SIN HABER LEIDO ANTES ESTE README.
