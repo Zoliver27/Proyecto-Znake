@@ -40,5 +40,10 @@ namespace design_sign_up
                 this.Hide();
             }
         }
+
+        private void frm_HighBar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

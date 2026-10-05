@@ -271,6 +271,7 @@
             frm_HighBar.Size = new Size(950, 40);
             frm_HighBar.TabIndex = 21;
             frm_HighBar.ThemeColor = Color.FromArgb(17, 17, 22);
+            frm_HighBar.Click += frm_HighBar_Click;
             // 
             // Sign_In
             // 
