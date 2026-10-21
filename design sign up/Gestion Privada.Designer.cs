@@ -35,10 +35,10 @@
             lbl_GesAdministrador = new Label();
             form_GestionPriv = new ReaLTaiizor.Forms.HopeForm();
             cmb_PuestosT = new ComboBox();
-            hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            hopeTextBox2 = new ReaLTaiizor.Controls.HopeTextBox();
-            hopeTextBox3 = new ReaLTaiizor.Controls.HopeTextBox();
-            hopeTextBox4 = new ReaLTaiizor.Controls.HopeTextBox();
+            txb_Nombre = new ReaLTaiizor.Controls.HopeTextBox();
+            txb_Email = new ReaLTaiizor.Controls.HopeTextBox();
+            txb_Edad = new ReaLTaiizor.Controls.HopeTextBox();
+            txb_Telefono = new ReaLTaiizor.Controls.HopeTextBox();
             btn_RegistrarGPriv = new ReaLTaiizor.Controls.HopeButton();
             btn_LimpiarGPriv = new ReaLTaiizor.Controls.HopeButton();
             ((System.ComponentModel.ISupportInitialize)dgv_GestionDueno).BeginInit();
@@ -131,101 +131,101 @@
             cmb_PuestosT.Size = new Size(151, 28);
             cmb_PuestosT.TabIndex = 21;
             // 
-            // hopeTextBox1
+            // txb_Nombre
             // 
-            hopeTextBox1.BackColor = Color.FromArgb(40, 40, 47);
-            hopeTextBox1.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox1.BorderColorA = Color.FromArgb(64, 158, 255);
-            hopeTextBox1.BorderColorB = Color.Gray;
-            hopeTextBox1.Font = new Font("Segoe UI", 12F);
-            hopeTextBox1.ForeColor = Color.White;
-            hopeTextBox1.Hint = "";
-            hopeTextBox1.Location = new Point(777, 91);
-            hopeTextBox1.MaxLength = 32767;
-            hopeTextBox1.Multiline = false;
-            hopeTextBox1.Name = "hopeTextBox1";
-            hopeTextBox1.PasswordChar = '\0';
-            hopeTextBox1.ScrollBars = ScrollBars.None;
-            hopeTextBox1.SelectedText = "";
-            hopeTextBox1.SelectionLength = 0;
-            hopeTextBox1.SelectionStart = 0;
-            hopeTextBox1.Size = new Size(401, 43);
-            hopeTextBox1.TabIndex = 22;
-            hopeTextBox1.TabStop = false;
-            hopeTextBox1.Text = "Nombre";
-            hopeTextBox1.UseSystemPasswordChar = false;
+            txb_Nombre.BackColor = Color.FromArgb(40, 40, 47);
+            txb_Nombre.BaseColor = Color.FromArgb(44, 55, 66);
+            txb_Nombre.BorderColorA = Color.FromArgb(64, 158, 255);
+            txb_Nombre.BorderColorB = Color.Gray;
+            txb_Nombre.Font = new Font("Segoe UI", 12F);
+            txb_Nombre.ForeColor = Color.White;
+            txb_Nombre.Hint = "";
+            txb_Nombre.Location = new Point(777, 91);
+            txb_Nombre.MaxLength = 32767;
+            txb_Nombre.Multiline = false;
+            txb_Nombre.Name = "txb_Nombre";
+            txb_Nombre.PasswordChar = '\0';
+            txb_Nombre.ScrollBars = ScrollBars.None;
+            txb_Nombre.SelectedText = "";
+            txb_Nombre.SelectionLength = 0;
+            txb_Nombre.SelectionStart = 0;
+            txb_Nombre.Size = new Size(401, 43);
+            txb_Nombre.TabIndex = 22;
+            txb_Nombre.TabStop = false;
+            txb_Nombre.Text = "Nombre";
+            txb_Nombre.UseSystemPasswordChar = false;
             // 
-            // hopeTextBox2
+            // txb_Email
             // 
-            hopeTextBox2.BackColor = Color.FromArgb(40, 40, 47);
-            hopeTextBox2.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox2.BorderColorA = Color.FromArgb(64, 158, 255);
-            hopeTextBox2.BorderColorB = Color.Gray;
-            hopeTextBox2.Font = new Font("Segoe UI", 12F);
-            hopeTextBox2.ForeColor = Color.White;
-            hopeTextBox2.Hint = "";
-            hopeTextBox2.Location = new Point(777, 173);
-            hopeTextBox2.MaxLength = 32767;
-            hopeTextBox2.Multiline = false;
-            hopeTextBox2.Name = "hopeTextBox2";
-            hopeTextBox2.PasswordChar = '\0';
-            hopeTextBox2.ScrollBars = ScrollBars.None;
-            hopeTextBox2.SelectedText = "";
-            hopeTextBox2.SelectionLength = 0;
-            hopeTextBox2.SelectionStart = 0;
-            hopeTextBox2.Size = new Size(401, 43);
-            hopeTextBox2.TabIndex = 23;
-            hopeTextBox2.TabStop = false;
-            hopeTextBox2.Text = "Email";
-            hopeTextBox2.UseSystemPasswordChar = false;
+            txb_Email.BackColor = Color.FromArgb(40, 40, 47);
+            txb_Email.BaseColor = Color.FromArgb(44, 55, 66);
+            txb_Email.BorderColorA = Color.FromArgb(64, 158, 255);
+            txb_Email.BorderColorB = Color.Gray;
+            txb_Email.Font = new Font("Segoe UI", 12F);
+            txb_Email.ForeColor = Color.White;
+            txb_Email.Hint = "";
+            txb_Email.Location = new Point(777, 173);
+            txb_Email.MaxLength = 32767;
+            txb_Email.Multiline = false;
+            txb_Email.Name = "txb_Email";
+            txb_Email.PasswordChar = '\0';
+            txb_Email.ScrollBars = ScrollBars.None;
+            txb_Email.SelectedText = "";
+            txb_Email.SelectionLength = 0;
+            txb_Email.SelectionStart = 0;
+            txb_Email.Size = new Size(401, 43);
+            txb_Email.TabIndex = 23;
+            txb_Email.TabStop = false;
+            txb_Email.Text = "Email";
+            txb_Email.UseSystemPasswordChar = false;
             // 
-            // hopeTextBox3
+            // txb_Edad
             // 
-            hopeTextBox3.BackColor = Color.FromArgb(40, 40, 47);
-            hopeTextBox3.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox3.BorderColorA = Color.FromArgb(64, 158, 255);
-            hopeTextBox3.BorderColorB = Color.Gray;
-            hopeTextBox3.Font = new Font("Segoe UI", 12F);
-            hopeTextBox3.ForeColor = Color.White;
-            hopeTextBox3.Hint = "";
-            hopeTextBox3.Location = new Point(777, 255);
-            hopeTextBox3.MaxLength = 32767;
-            hopeTextBox3.Multiline = false;
-            hopeTextBox3.Name = "hopeTextBox3";
-            hopeTextBox3.PasswordChar = '\0';
-            hopeTextBox3.ScrollBars = ScrollBars.None;
-            hopeTextBox3.SelectedText = "";
-            hopeTextBox3.SelectionLength = 0;
-            hopeTextBox3.SelectionStart = 0;
-            hopeTextBox3.Size = new Size(401, 43);
-            hopeTextBox3.TabIndex = 24;
-            hopeTextBox3.TabStop = false;
-            hopeTextBox3.Text = "Edad";
-            hopeTextBox3.UseSystemPasswordChar = false;
+            txb_Edad.BackColor = Color.FromArgb(40, 40, 47);
+            txb_Edad.BaseColor = Color.FromArgb(44, 55, 66);
+            txb_Edad.BorderColorA = Color.FromArgb(64, 158, 255);
+            txb_Edad.BorderColorB = Color.Gray;
+            txb_Edad.Font = new Font("Segoe UI", 12F);
+            txb_Edad.ForeColor = Color.White;
+            txb_Edad.Hint = "";
+            txb_Edad.Location = new Point(777, 255);
+            txb_Edad.MaxLength = 32767;
+            txb_Edad.Multiline = false;
+            txb_Edad.Name = "txb_Edad";
+            txb_Edad.PasswordChar = '\0';
+            txb_Edad.ScrollBars = ScrollBars.None;
+            txb_Edad.SelectedText = "";
+            txb_Edad.SelectionLength = 0;
+            txb_Edad.SelectionStart = 0;
+            txb_Edad.Size = new Size(401, 43);
+            txb_Edad.TabIndex = 24;
+            txb_Edad.TabStop = false;
+            txb_Edad.Text = "Edad";
+            txb_Edad.UseSystemPasswordChar = false;
             // 
-            // hopeTextBox4
+            // txb_Telefono
             // 
-            hopeTextBox4.BackColor = Color.FromArgb(40, 40, 47);
-            hopeTextBox4.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox4.BorderColorA = Color.FromArgb(64, 158, 255);
-            hopeTextBox4.BorderColorB = Color.Gray;
-            hopeTextBox4.Font = new Font("Segoe UI", 12F);
-            hopeTextBox4.ForeColor = Color.White;
-            hopeTextBox4.Hint = "";
-            hopeTextBox4.Location = new Point(777, 333);
-            hopeTextBox4.MaxLength = 32767;
-            hopeTextBox4.Multiline = false;
-            hopeTextBox4.Name = "hopeTextBox4";
-            hopeTextBox4.PasswordChar = '\0';
-            hopeTextBox4.ScrollBars = ScrollBars.None;
-            hopeTextBox4.SelectedText = "";
-            hopeTextBox4.SelectionLength = 0;
-            hopeTextBox4.SelectionStart = 0;
-            hopeTextBox4.Size = new Size(401, 43);
-            hopeTextBox4.TabIndex = 25;
-            hopeTextBox4.TabStop = false;
-            hopeTextBox4.Text = "Telefono";
-            hopeTextBox4.UseSystemPasswordChar = false;
+            txb_Telefono.BackColor = Color.FromArgb(40, 40, 47);
+            txb_Telefono.BaseColor = Color.FromArgb(44, 55, 66);
+            txb_Telefono.BorderColorA = Color.FromArgb(64, 158, 255);
+            txb_Telefono.BorderColorB = Color.Gray;
+            txb_Telefono.Font = new Font("Segoe UI", 12F);
+            txb_Telefono.ForeColor = Color.White;
+            txb_Telefono.Hint = "";
+            txb_Telefono.Location = new Point(777, 333);
+            txb_Telefono.MaxLength = 32767;
+            txb_Telefono.Multiline = false;
+            txb_Telefono.Name = "txb_Telefono";
+            txb_Telefono.PasswordChar = '\0';
+            txb_Telefono.ScrollBars = ScrollBars.None;
+            txb_Telefono.SelectedText = "";
+            txb_Telefono.SelectionLength = 0;
+            txb_Telefono.SelectionStart = 0;
+            txb_Telefono.Size = new Size(401, 43);
+            txb_Telefono.TabIndex = 25;
+            txb_Telefono.TabStop = false;
+            txb_Telefono.Text = "Telefono";
+            txb_Telefono.UseSystemPasswordChar = false;
             // 
             // btn_RegistrarGPriv
             // 
@@ -274,10 +274,10 @@
             ClientSize = new Size(1244, 550);
             Controls.Add(btn_LimpiarGPriv);
             Controls.Add(btn_RegistrarGPriv);
-            Controls.Add(hopeTextBox4);
-            Controls.Add(hopeTextBox3);
-            Controls.Add(hopeTextBox2);
-            Controls.Add(hopeTextBox1);
+            Controls.Add(txb_Telefono);
+            Controls.Add(txb_Edad);
+            Controls.Add(txb_Email);
+            Controls.Add(txb_Nombre);
             Controls.Add(cmb_PuestosT);
             Controls.Add(form_GestionPriv);
             Controls.Add(lbl_GesAdministrador);
@@ -291,6 +291,7 @@
             Name = "Gestion_Privada";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gestion_Privada";
+            Load += Gestion_Privada_Load;
             ((System.ComponentModel.ISupportInitialize)dgv_GestionDueno).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgv_GestionAdministrador).EndInit();
             ResumeLayout(false);
@@ -306,10 +307,10 @@
         private Label lbl_GesAdministrador;
         private ReaLTaiizor.Forms.HopeForm form_GestionPriv;
         private ComboBox cmb_PuestosT;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox2;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox3;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox4;
+        private ReaLTaiizor.Controls.HopeTextBox txb_Nombre;
+        private ReaLTaiizor.Controls.HopeTextBox txb_Email;
+        private ReaLTaiizor.Controls.HopeTextBox txb_Edad;
+        private ReaLTaiizor.Controls.HopeTextBox txb_Telefono;
         private ReaLTaiizor.Controls.HopeButton btn_RegistrarGPriv;
         private ReaLTaiizor.Controls.HopeButton btn_LimpiarGPriv;
     }

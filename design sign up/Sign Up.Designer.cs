@@ -97,6 +97,7 @@
             btn_SignUp.Text = "Sign Up";
             btn_SignUp.TextColor = Color.White;
             btn_SignUp.WarningColor = Color.FromArgb(61, 58, 66);
+            btn_SignUp.Click += btn_SignUp_Click;
             // 
             // lbl_Password
             // 
