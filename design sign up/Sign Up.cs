@@ -1,3 +1,5 @@
+using Logica_Znake;
+
 namespace design_sign_up
 {
     public partial class Sign_Up : Form
@@ -18,6 +20,13 @@ namespace design_sign_up
         {
             Sign_In SI = new Sign_In();
             SI.Show();
+            this.Hide();
+        }
+
+        private void btn_SignUp_Click(object sender, EventArgs e)
+        {
+            Gestion_Privada gp = new Gestion_Privada();
+            gp.Show();
             this.Hide();
         }
     }

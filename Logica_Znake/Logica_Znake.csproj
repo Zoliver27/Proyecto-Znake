@@ -4,6 +4,12 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<RootNamespace>Logica_Znake</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Datos(SQLConnection)_Znake\Datos(SQLConnection)_Znake.csproj" />
+    <ProjectReference Include="..\Entidades_Znake\Entidades_Znake.csproj" />
+  </ItemGroup>
 
 </Project>
