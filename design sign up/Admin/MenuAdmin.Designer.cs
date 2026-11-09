@@ -1,6 +1,6 @@
 ﻿namespace design_sign_up
 {
-    partial class MenuClientes
+    partial class MenuAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -52,6 +52,32 @@
             btn_Productos = new ReaLTaiizor.Controls.HopeButton();
             btn_Inicio = new ReaLTaiizor.Controls.HopeButton();
             pnl_Contenido = new Panel();
+            pnl_Productos = new Panel();
+            pictureBox1 = new PictureBox();
+            hopeButton4 = new ReaLTaiizor.Controls.HopeButton();
+            btnEliminar = new ReaLTaiizor.Controls.HopeButton();
+            dgvProductos = new ReaLTaiizor.Controls.PoisonDataGridView();
+            btnAgregarNuevoProducto = new ReaLTaiizor.Controls.HopeButton();
+            txtbBuscarProducto = new ReaLTaiizor.Controls.HopeTextBox();
+            btnBuscarProducto = new ReaLTaiizor.Controls.HopeButton();
+            label6 = new Label();
+            label5 = new Label();
+            pnl_Inicio = new Panel();
+            panel4 = new Panel();
+            lblTotalIngresos = new Label();
+            label4 = new Label();
+            panel3 = new Panel();
+            lblTotalVentas = new Label();
+            label3 = new Label();
+            panel2 = new Panel();
+            lblTotalProductos = new Label();
+            label2 = new Label();
+            panel1 = new Panel();
+            lblTotalClientes = new Label();
+            label1 = new Label();
+            lbl_Inicio = new Label();
+            pctb_ZnakeLogo = new PictureBox();
+            lbl_Bienvenido = new Label();
             pnl_Configuracion = new Panel();
             hopeButton11 = new ReaLTaiizor.Controls.HopeButton();
             hopeTextBox6 = new ReaLTaiizor.Controls.HopeTextBox();
@@ -73,29 +99,6 @@
             hopeTextBox2 = new ReaLTaiizor.Controls.HopeTextBox();
             label8 = new Label();
             label7 = new Label();
-            pnl_Productos = new Panel();
-            pictureBox1 = new PictureBox();
-            hopeButton4 = new ReaLTaiizor.Controls.HopeButton();
-            hopeButton3 = new ReaLTaiizor.Controls.HopeButton();
-            poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
-            hopeComboBox1 = new ReaLTaiizor.Controls.HopeComboBox();
-            hopeButton2 = new ReaLTaiizor.Controls.HopeButton();
-            hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
-            hopeButton1 = new ReaLTaiizor.Controls.HopeButton();
-            label6 = new Label();
-            label5 = new Label();
-            pnl_Inicio = new Panel();
-            panel4 = new Panel();
-            label4 = new Label();
-            panel3 = new Panel();
-            label3 = new Label();
-            panel2 = new Panel();
-            label2 = new Label();
-            panel1 = new Panel();
-            label1 = new Label();
-            lbl_Inicio = new Label();
-            pctb_ZnakeLogo = new PictureBox();
-            lbl_Bienvenido = new Label();
             pnl_Inventario = new Panel();
             poisonDataGridView4 = new ReaLTaiizor.Controls.PoisonDataGridView();
             hopeComboBox5 = new ReaLTaiizor.Controls.HopeComboBox();
@@ -121,20 +124,20 @@
             pnl_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pctb_Znake).BeginInit();
             pnl_Contenido.SuspendLayout();
-            pnl_Configuracion.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            pnl_Clientes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)poisonDataGridView2).BeginInit();
             pnl_Productos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)poisonDataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             pnl_Inicio.SuspendLayout();
             panel4.SuspendLayout();
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pctb_ZnakeLogo).BeginInit();
+            pnl_Configuracion.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            pnl_Clientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)poisonDataGridView2).BeginInit();
             pnl_Inventario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)poisonDataGridView4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -339,16 +342,393 @@
             // 
             // pnl_Contenido
             // 
-            pnl_Contenido.Controls.Add(pnl_Configuracion);
-            pnl_Contenido.Controls.Add(pnl_Clientes);
             pnl_Contenido.Controls.Add(pnl_Productos);
             pnl_Contenido.Controls.Add(pnl_Inicio);
+            pnl_Contenido.Controls.Add(pnl_Configuracion);
+            pnl_Contenido.Controls.Add(pnl_Clientes);
             pnl_Contenido.Controls.Add(pnl_Inventario);
             pnl_Contenido.Controls.Add(pnl_Ventas);
             pnl_Contenido.Location = new Point(274, 56);
             pnl_Contenido.Name = "pnl_Contenido";
             pnl_Contenido.Size = new Size(1098, 722);
             pnl_Contenido.TabIndex = 2;
+            // 
+            // pnl_Productos
+            // 
+            pnl_Productos.BackColor = Color.FromArgb(40, 40, 47);
+            pnl_Productos.Controls.Add(pictureBox1);
+            pnl_Productos.Controls.Add(hopeButton4);
+            pnl_Productos.Controls.Add(btnEliminar);
+            pnl_Productos.Controls.Add(dgvProductos);
+            pnl_Productos.Controls.Add(btnAgregarNuevoProducto);
+            pnl_Productos.Controls.Add(txtbBuscarProducto);
+            pnl_Productos.Controls.Add(btnBuscarProducto);
+            pnl_Productos.Controls.Add(label6);
+            pnl_Productos.Controls.Add(label5);
+            pnl_Productos.Dock = DockStyle.Fill;
+            pnl_Productos.Location = new Point(0, 0);
+            pnl_Productos.Name = "pnl_Productos";
+            pnl_Productos.Size = new Size(1098, 722);
+            pnl_Productos.TabIndex = 17;
+            pnl_Productos.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.SnakeLogo1;
+            pictureBox1.Location = new Point(992, 25);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(75, 75);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
+            // hopeButton4
+            // 
+            hopeButton4.BorderColor = Color.FromArgb(20, 20, 25);
+            hopeButton4.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            hopeButton4.DangerColor = Color.FromArgb(170, 55, 55);
+            hopeButton4.DefaultColor = Color.FromArgb(34, 35, 43);
+            hopeButton4.Font = new Font("Segoe UI", 12F);
+            hopeButton4.HoverTextColor = Color.White;
+            hopeButton4.InfoColor = Color.FromArgb(55, 125, 200);
+            hopeButton4.Location = new Point(787, 664);
+            hopeButton4.Name = "hopeButton4";
+            hopeButton4.PrimaryColor = Color.FromArgb(17, 17, 22);
+            hopeButton4.Size = new Size(126, 40);
+            hopeButton4.SuccessColor = Color.FromArgb(55, 150, 100);
+            hopeButton4.TabIndex = 18;
+            hopeButton4.Text = "Editar";
+            hopeButton4.TextColor = Color.FromArgb(235, 235, 240);
+            hopeButton4.WarningColor = Color.FromArgb(200, 145, 50);
+            hopeButton4.Click += btnEditar_Click;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.BorderColor = Color.FromArgb(20, 20, 25);
+            btnEliminar.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            btnEliminar.DangerColor = Color.FromArgb(170, 55, 55);
+            btnEliminar.DefaultColor = Color.FromArgb(34, 35, 43);
+            btnEliminar.Font = new Font("Segoe UI", 12F);
+            btnEliminar.HoverTextColor = Color.White;
+            btnEliminar.InfoColor = Color.FromArgb(55, 125, 200);
+            btnEliminar.Location = new Point(944, 664);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.PrimaryColor = Color.FromArgb(17, 17, 22);
+            btnEliminar.Size = new Size(122, 40);
+            btnEliminar.SuccessColor = Color.FromArgb(55, 150, 100);
+            btnEliminar.TabIndex = 17;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.TextColor = Color.FromArgb(235, 235, 240);
+            btnEliminar.WarningColor = Color.FromArgb(200, 145, 50);
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // dgvProductos
+            // 
+            dgvProductos.AllowUserToResizeRows = false;
+            dgvProductos.BackgroundColor = Color.FromArgb(33, 33, 37);
+            dgvProductos.BorderStyle = BorderStyle.None;
+            dgvProductos.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dgvProductos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(136, 136, 136);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dgvProductos.DefaultCellStyle = dataGridViewCellStyle2;
+            dgvProductos.EnableHeadersVisualStyles = false;
+            dgvProductos.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dgvProductos.GridColor = Color.FromArgb(255, 255, 255);
+            dgvProductos.Location = new Point(39, 273);
+            dgvProductos.MultiSelect = false;
+            dgvProductos.Name = "dgvProductos";
+            dgvProductos.ReadOnly = true;
+            dgvProductos.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dgvProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dgvProductos.RowHeadersWidth = 51;
+            dgvProductos.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dgvProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvProductos.Size = new Size(1028, 366);
+            dgvProductos.TabIndex = 16;
+            // 
+            // btnAgregarNuevoProducto
+            // 
+            btnAgregarNuevoProducto.BorderColor = Color.FromArgb(20, 20, 25);
+            btnAgregarNuevoProducto.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            btnAgregarNuevoProducto.DangerColor = Color.FromArgb(170, 55, 55);
+            btnAgregarNuevoProducto.DefaultColor = Color.FromArgb(34, 35, 43);
+            btnAgregarNuevoProducto.Font = new Font("Segoe UI", 12F);
+            btnAgregarNuevoProducto.HoverTextColor = Color.White;
+            btnAgregarNuevoProducto.InfoColor = Color.FromArgb(55, 125, 200);
+            btnAgregarNuevoProducto.Location = new Point(36, 664);
+            btnAgregarNuevoProducto.Name = "btnAgregarNuevoProducto";
+            btnAgregarNuevoProducto.PrimaryColor = Color.FromArgb(17, 17, 22);
+            btnAgregarNuevoProducto.Size = new Size(291, 40);
+            btnAgregarNuevoProducto.SuccessColor = Color.FromArgb(55, 150, 100);
+            btnAgregarNuevoProducto.TabIndex = 14;
+            btnAgregarNuevoProducto.Text = "Agregar Nuevo Producto";
+            btnAgregarNuevoProducto.TextColor = Color.FromArgb(235, 235, 240);
+            btnAgregarNuevoProducto.WarningColor = Color.FromArgb(200, 145, 50);
+            btnAgregarNuevoProducto.Click += btnAgregarNuevoProducto_Click;
+            // 
+            // txtbBuscarProducto
+            // 
+            txtbBuscarProducto.BackColor = Color.FromArgb(17, 17, 30);
+            txtbBuscarProducto.BaseColor = Color.FromArgb(44, 55, 66);
+            txtbBuscarProducto.BorderColorA = Color.FromArgb(44, 44, 54);
+            txtbBuscarProducto.BorderColorB = Color.FromArgb(17, 17, 22);
+            txtbBuscarProducto.Font = new Font("Segoe UI", 12F);
+            txtbBuscarProducto.ForeColor = Color.White;
+            txtbBuscarProducto.Hint = "";
+            txtbBuscarProducto.Location = new Point(36, 149);
+            txtbBuscarProducto.MaxLength = 32767;
+            txtbBuscarProducto.Multiline = false;
+            txtbBuscarProducto.Name = "txtbBuscarProducto";
+            txtbBuscarProducto.PasswordChar = '\0';
+            txtbBuscarProducto.ScrollBars = ScrollBars.None;
+            txtbBuscarProducto.SelectedText = "";
+            txtbBuscarProducto.SelectionLength = 0;
+            txtbBuscarProducto.SelectionStart = 0;
+            txtbBuscarProducto.Size = new Size(851, 43);
+            txtbBuscarProducto.TabIndex = 13;
+            txtbBuscarProducto.TabStop = false;
+            txtbBuscarProducto.Text = "Buscar Producto...";
+            txtbBuscarProducto.UseSystemPasswordChar = false;
+            txtbBuscarProducto.TextChanged += txtbBuscarProducto_TextChanged;
+            // 
+            // btnBuscarProducto
+            // 
+            btnBuscarProducto.BorderColor = Color.FromArgb(20, 20, 25);
+            btnBuscarProducto.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            btnBuscarProducto.DangerColor = Color.FromArgb(170, 55, 55);
+            btnBuscarProducto.DefaultColor = Color.FromArgb(34, 35, 43);
+            btnBuscarProducto.Font = new Font("Segoe UI", 12F);
+            btnBuscarProducto.HoverTextColor = Color.White;
+            btnBuscarProducto.InfoColor = Color.FromArgb(55, 125, 200);
+            btnBuscarProducto.Location = new Point(36, 209);
+            btnBuscarProducto.Name = "btnBuscarProducto";
+            btnBuscarProducto.PrimaryColor = Color.FromArgb(17, 17, 22);
+            btnBuscarProducto.Size = new Size(197, 40);
+            btnBuscarProducto.SuccessColor = Color.FromArgb(55, 150, 100);
+            btnBuscarProducto.TabIndex = 9;
+            btnBuscarProducto.Text = "Buscar Produto";
+            btnBuscarProducto.TextColor = Color.FromArgb(235, 235, 240);
+            btnBuscarProducto.WarningColor = Color.FromArgb(200, 145, 50);
+            btnBuscarProducto.Click += btnBuscarProducto_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(36, 94);
+            label6.Name = "label6";
+            label6.Size = new Size(536, 32);
+            label6.TabIndex = 12;
+            label6.Text = "Gestiona los productos registrados";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Lucida Sans", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(36, 29);
+            label5.Name = "label5";
+            label5.Size = new Size(197, 39);
+            label5.TabIndex = 11;
+            label5.Text = "Productos";
+            // 
+            // pnl_Inicio
+            // 
+            pnl_Inicio.BackColor = Color.FromArgb(40, 40, 47);
+            pnl_Inicio.Controls.Add(panel4);
+            pnl_Inicio.Controls.Add(panel3);
+            pnl_Inicio.Controls.Add(panel2);
+            pnl_Inicio.Controls.Add(panel1);
+            pnl_Inicio.Controls.Add(lbl_Inicio);
+            pnl_Inicio.Controls.Add(pctb_ZnakeLogo);
+            pnl_Inicio.Controls.Add(lbl_Bienvenido);
+            pnl_Inicio.Location = new Point(53, 56);
+            pnl_Inicio.Name = "pnl_Inicio";
+            pnl_Inicio.Size = new Size(116, 81);
+            pnl_Inicio.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(66, 66, 76);
+            panel4.Controls.Add(lblTotalIngresos);
+            panel4.Controls.Add(label4);
+            panel4.Location = new Point(36, 178);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(250, 206);
+            panel4.TabIndex = 16;
+            // 
+            // lblTotalIngresos
+            // 
+            lblTotalIngresos.AutoSize = true;
+            lblTotalIngresos.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalIngresos.ForeColor = Color.White;
+            lblTotalIngresos.Location = new Point(28, 95);
+            lblTotalIngresos.Name = "lblTotalIngresos";
+            lblTotalIngresos.Size = new Size(75, 32);
+            lblTotalIngresos.TabIndex = 16;
+            lblTotalIngresos.Text = "0 Bs";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(17, 17);
+            label4.Name = "label4";
+            label4.Size = new Size(144, 32);
+            label4.TabIndex = 15;
+            label4.Text = "Ingresos";
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(66, 66, 76);
+            panel3.Controls.Add(lblTotalVentas);
+            panel3.Controls.Add(label3);
+            panel3.Location = new Point(817, 444);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(250, 206);
+            panel3.TabIndex = 12;
+            // 
+            // lblTotalVentas
+            // 
+            lblTotalVentas.AutoSize = true;
+            lblTotalVentas.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalVentas.ForeColor = Color.White;
+            lblTotalVentas.Location = new Point(29, 102);
+            lblTotalVentas.Name = "lblTotalVentas";
+            lblTotalVentas.Size = new Size(32, 32);
+            lblTotalVentas.TabIndex = 19;
+            lblTotalVentas.Text = "0";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(21, 20);
+            label3.Name = "label3";
+            label3.Size = new Size(115, 32);
+            label3.TabIndex = 15;
+            label3.Text = "Ventas";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(66, 66, 76);
+            panel2.Controls.Add(lblTotalProductos);
+            panel2.Controls.Add(label2);
+            panel2.Location = new Point(420, 444);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(250, 206);
+            panel2.TabIndex = 12;
+            // 
+            // lblTotalProductos
+            // 
+            lblTotalProductos.AutoSize = true;
+            lblTotalProductos.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalProductos.ForeColor = Color.White;
+            lblTotalProductos.Location = new Point(29, 92);
+            lblTotalProductos.Name = "lblTotalProductos";
+            lblTotalProductos.Size = new Size(32, 32);
+            lblTotalProductos.TabIndex = 18;
+            lblTotalProductos.Text = "0";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(17, 20);
+            label2.Name = "label2";
+            label2.Size = new Size(163, 32);
+            label2.TabIndex = 14;
+            label2.Text = "Productos";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(66, 66, 76);
+            panel1.Controls.Add(lblTotalClientes);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(36, 444);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 206);
+            panel1.TabIndex = 11;
+            // 
+            // lblTotalClientes
+            // 
+            lblTotalClientes.AutoSize = true;
+            lblTotalClientes.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalClientes.ForeColor = Color.White;
+            lblTotalClientes.Location = new Point(28, 92);
+            lblTotalClientes.Name = "lblTotalClientes";
+            lblTotalClientes.Size = new Size(32, 32);
+            lblTotalClientes.TabIndex = 17;
+            lblTotalClientes.Text = "0";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(17, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 32);
+            label1.TabIndex = 13;
+            label1.Text = "Clientes";
+            // 
+            // lbl_Inicio
+            // 
+            lbl_Inicio.AutoSize = true;
+            lbl_Inicio.Font = new Font("Lucida Sans", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_Inicio.ForeColor = Color.White;
+            lbl_Inicio.Location = new Point(36, 29);
+            lbl_Inicio.Name = "lbl_Inicio";
+            lbl_Inicio.Size = new Size(114, 39);
+            lbl_Inicio.TabIndex = 10;
+            lbl_Inicio.Text = "Inicio";
+            // 
+            // pctb_ZnakeLogo
+            // 
+            pctb_ZnakeLogo.Image = Properties.Resources.SnakeLogo1;
+            pctb_ZnakeLogo.Location = new Point(787, 29);
+            pctb_ZnakeLogo.Name = "pctb_ZnakeLogo";
+            pctb_ZnakeLogo.Size = new Size(280, 280);
+            pctb_ZnakeLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pctb_ZnakeLogo.TabIndex = 9;
+            pctb_ZnakeLogo.TabStop = false;
+            // 
+            // lbl_Bienvenido
+            // 
+            lbl_Bienvenido.AutoSize = true;
+            lbl_Bienvenido.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_Bienvenido.ForeColor = Color.White;
+            lbl_Bienvenido.Location = new Point(36, 88);
+            lbl_Bienvenido.Name = "lbl_Bienvenido";
+            lbl_Bienvenido.Size = new Size(328, 32);
+            lbl_Bienvenido.TabIndex = 9;
+            lbl_Bienvenido.Text = "Bienvenido de Nuevo";
             // 
             // pnl_Configuracion
             // 
@@ -364,10 +744,9 @@
             pnl_Configuracion.Controls.Add(pictureBox5);
             pnl_Configuracion.Controls.Add(label16);
             pnl_Configuracion.Controls.Add(label17);
-            pnl_Configuracion.Dock = DockStyle.Fill;
-            pnl_Configuracion.Location = new Point(0, 0);
+            pnl_Configuracion.Location = new Point(683, 326);
             pnl_Configuracion.Name = "pnl_Configuracion";
-            pnl_Configuracion.Size = new Size(1098, 722);
+            pnl_Configuracion.Size = new Size(195, 177);
             pnl_Configuracion.TabIndex = 34;
             // 
             // hopeButton11
@@ -545,10 +924,9 @@
             pnl_Clientes.Controls.Add(hopeTextBox2);
             pnl_Clientes.Controls.Add(label8);
             pnl_Clientes.Controls.Add(label7);
-            pnl_Clientes.Dock = DockStyle.Fill;
-            pnl_Clientes.Location = new Point(0, 0);
+            pnl_Clientes.Location = new Point(656, 56);
             pnl_Clientes.Name = "pnl_Clientes";
-            pnl_Clientes.Size = new Size(1098, 722);
+            pnl_Clientes.Size = new Size(189, 148);
             pnl_Clientes.TabIndex = 19;
             pnl_Clientes.Visible = false;
             // 
@@ -626,37 +1004,37 @@
             poisonDataGridView2.BorderStyle = BorderStyle.None;
             poisonDataGridView2.CellBorderStyle = DataGridViewCellBorderStyle.None;
             poisonDataGridView2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle4.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             poisonDataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            poisonDataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = Color.FromArgb(136, 136, 136);
+            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle5.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
+            poisonDataGridView2.DefaultCellStyle = dataGridViewCellStyle5;
             poisonDataGridView2.EnableHeadersVisualStyles = false;
             poisonDataGridView2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             poisonDataGridView2.GridColor = Color.FromArgb(255, 255, 255);
             poisonDataGridView2.Location = new Point(36, 230);
             poisonDataGridView2.Name = "poisonDataGridView2";
             poisonDataGridView2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle6.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             poisonDataGridView2.RowHeadersWidth = 51;
             poisonDataGridView2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             poisonDataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -709,343 +1087,6 @@
             label7.TabIndex = 12;
             label7.Text = "Clientes";
             // 
-            // pnl_Productos
-            // 
-            pnl_Productos.BackColor = Color.FromArgb(40, 40, 47);
-            pnl_Productos.Controls.Add(pictureBox1);
-            pnl_Productos.Controls.Add(hopeButton4);
-            pnl_Productos.Controls.Add(hopeButton3);
-            pnl_Productos.Controls.Add(poisonDataGridView1);
-            pnl_Productos.Controls.Add(hopeComboBox1);
-            pnl_Productos.Controls.Add(hopeButton2);
-            pnl_Productos.Controls.Add(hopeTextBox1);
-            pnl_Productos.Controls.Add(hopeButton1);
-            pnl_Productos.Controls.Add(label6);
-            pnl_Productos.Controls.Add(label5);
-            pnl_Productos.Dock = DockStyle.Fill;
-            pnl_Productos.Location = new Point(0, 0);
-            pnl_Productos.Name = "pnl_Productos";
-            pnl_Productos.Size = new Size(1098, 722);
-            pnl_Productos.TabIndex = 17;
-            pnl_Productos.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.SnakeLogo1;
-            pictureBox1.Location = new Point(992, 25);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(75, 75);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
-            // 
-            // hopeButton4
-            // 
-            hopeButton4.BorderColor = Color.FromArgb(20, 20, 25);
-            hopeButton4.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton4.DangerColor = Color.FromArgb(170, 55, 55);
-            hopeButton4.DefaultColor = Color.FromArgb(34, 35, 43);
-            hopeButton4.Font = new Font("Segoe UI", 12F);
-            hopeButton4.HoverTextColor = Color.White;
-            hopeButton4.InfoColor = Color.FromArgb(55, 125, 200);
-            hopeButton4.Location = new Point(787, 664);
-            hopeButton4.Name = "hopeButton4";
-            hopeButton4.PrimaryColor = Color.FromArgb(17, 17, 22);
-            hopeButton4.Size = new Size(126, 40);
-            hopeButton4.SuccessColor = Color.FromArgb(55, 150, 100);
-            hopeButton4.TabIndex = 18;
-            hopeButton4.Text = "Editar";
-            hopeButton4.TextColor = Color.FromArgb(235, 235, 240);
-            hopeButton4.WarningColor = Color.FromArgb(200, 145, 50);
-            // 
-            // hopeButton3
-            // 
-            hopeButton3.BorderColor = Color.FromArgb(20, 20, 25);
-            hopeButton3.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton3.DangerColor = Color.FromArgb(170, 55, 55);
-            hopeButton3.DefaultColor = Color.FromArgb(34, 35, 43);
-            hopeButton3.Font = new Font("Segoe UI", 12F);
-            hopeButton3.HoverTextColor = Color.White;
-            hopeButton3.InfoColor = Color.FromArgb(55, 125, 200);
-            hopeButton3.Location = new Point(944, 664);
-            hopeButton3.Name = "hopeButton3";
-            hopeButton3.PrimaryColor = Color.FromArgb(17, 17, 22);
-            hopeButton3.Size = new Size(122, 40);
-            hopeButton3.SuccessColor = Color.FromArgb(55, 150, 100);
-            hopeButton3.TabIndex = 17;
-            hopeButton3.Text = "Eliminar";
-            hopeButton3.TextColor = Color.FromArgb(235, 235, 240);
-            hopeButton3.WarningColor = Color.FromArgb(200, 145, 50);
-            // 
-            // poisonDataGridView1
-            // 
-            poisonDataGridView1.AllowUserToResizeRows = false;
-            poisonDataGridView1.BackgroundColor = Color.FromArgb(33, 33, 37);
-            poisonDataGridView1.BorderStyle = BorderStyle.None;
-            poisonDataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            poisonDataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            poisonDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle5.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
-            poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-            poisonDataGridView1.EnableHeadersVisualStyles = false;
-            poisonDataGridView1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            poisonDataGridView1.GridColor = Color.FromArgb(255, 255, 255);
-            poisonDataGridView1.Location = new Point(39, 273);
-            poisonDataGridView1.Name = "poisonDataGridView1";
-            poisonDataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            poisonDataGridView1.RowHeadersWidth = 51;
-            poisonDataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            poisonDataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            poisonDataGridView1.Size = new Size(1028, 366);
-            poisonDataGridView1.TabIndex = 16;
-            // 
-            // hopeComboBox1
-            // 
-            hopeComboBox1.BackColor = Color.FromArgb(17, 17, 30);
-            hopeComboBox1.DrawMode = DrawMode.OwnerDrawFixed;
-            hopeComboBox1.FlatStyle = FlatStyle.Flat;
-            hopeComboBox1.Font = new Font("Segoe UI", 12F);
-            hopeComboBox1.FormattingEnabled = true;
-            hopeComboBox1.ItemHeight = 30;
-            hopeComboBox1.Location = new Point(915, 152);
-            hopeComboBox1.Name = "hopeComboBox1";
-            hopeComboBox1.Size = new Size(151, 36);
-            hopeComboBox1.TabIndex = 15;
-            // 
-            // hopeButton2
-            // 
-            hopeButton2.BorderColor = Color.FromArgb(20, 20, 25);
-            hopeButton2.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton2.DangerColor = Color.FromArgb(170, 55, 55);
-            hopeButton2.DefaultColor = Color.FromArgb(34, 35, 43);
-            hopeButton2.Font = new Font("Segoe UI", 12F);
-            hopeButton2.HoverTextColor = Color.White;
-            hopeButton2.InfoColor = Color.FromArgb(55, 125, 200);
-            hopeButton2.Location = new Point(36, 664);
-            hopeButton2.Name = "hopeButton2";
-            hopeButton2.PrimaryColor = Color.FromArgb(17, 17, 22);
-            hopeButton2.Size = new Size(291, 40);
-            hopeButton2.SuccessColor = Color.FromArgb(55, 150, 100);
-            hopeButton2.TabIndex = 14;
-            hopeButton2.Text = "Agregar Nuevo Producto";
-            hopeButton2.TextColor = Color.FromArgb(235, 235, 240);
-            hopeButton2.WarningColor = Color.FromArgb(200, 145, 50);
-            // 
-            // hopeTextBox1
-            // 
-            hopeTextBox1.BackColor = Color.FromArgb(17, 17, 30);
-            hopeTextBox1.BaseColor = Color.FromArgb(44, 55, 66);
-            hopeTextBox1.BorderColorA = Color.FromArgb(44, 44, 54);
-            hopeTextBox1.BorderColorB = Color.FromArgb(17, 17, 22);
-            hopeTextBox1.Font = new Font("Segoe UI", 12F);
-            hopeTextBox1.ForeColor = Color.White;
-            hopeTextBox1.Hint = "";
-            hopeTextBox1.Location = new Point(36, 149);
-            hopeTextBox1.MaxLength = 32767;
-            hopeTextBox1.Multiline = false;
-            hopeTextBox1.Name = "hopeTextBox1";
-            hopeTextBox1.PasswordChar = '\0';
-            hopeTextBox1.ScrollBars = ScrollBars.None;
-            hopeTextBox1.SelectedText = "";
-            hopeTextBox1.SelectionLength = 0;
-            hopeTextBox1.SelectionStart = 0;
-            hopeTextBox1.Size = new Size(851, 43);
-            hopeTextBox1.TabIndex = 13;
-            hopeTextBox1.TabStop = false;
-            hopeTextBox1.Text = "Buscar Producto...";
-            hopeTextBox1.UseSystemPasswordChar = false;
-            // 
-            // hopeButton1
-            // 
-            hopeButton1.BorderColor = Color.FromArgb(20, 20, 25);
-            hopeButton1.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton1.DangerColor = Color.FromArgb(170, 55, 55);
-            hopeButton1.DefaultColor = Color.FromArgb(34, 35, 43);
-            hopeButton1.Font = new Font("Segoe UI", 12F);
-            hopeButton1.HoverTextColor = Color.White;
-            hopeButton1.InfoColor = Color.FromArgb(55, 125, 200);
-            hopeButton1.Location = new Point(36, 209);
-            hopeButton1.Name = "hopeButton1";
-            hopeButton1.PrimaryColor = Color.FromArgb(17, 17, 22);
-            hopeButton1.Size = new Size(197, 40);
-            hopeButton1.SuccessColor = Color.FromArgb(55, 150, 100);
-            hopeButton1.TabIndex = 9;
-            hopeButton1.Text = "Buscar Produto";
-            hopeButton1.TextColor = Color.FromArgb(235, 235, 240);
-            hopeButton1.WarningColor = Color.FromArgb(200, 145, 50);
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(36, 94);
-            label6.Name = "label6";
-            label6.Size = new Size(536, 32);
-            label6.TabIndex = 12;
-            label6.Text = "Gestiona los productos registrados";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Lucida Sans", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(36, 29);
-            label5.Name = "label5";
-            label5.Size = new Size(197, 39);
-            label5.TabIndex = 11;
-            label5.Text = "Productos";
-            // 
-            // pnl_Inicio
-            // 
-            pnl_Inicio.BackColor = Color.FromArgb(40, 40, 47);
-            pnl_Inicio.Controls.Add(panel4);
-            pnl_Inicio.Controls.Add(panel3);
-            pnl_Inicio.Controls.Add(panel2);
-            pnl_Inicio.Controls.Add(panel1);
-            pnl_Inicio.Controls.Add(lbl_Inicio);
-            pnl_Inicio.Controls.Add(pctb_ZnakeLogo);
-            pnl_Inicio.Controls.Add(lbl_Bienvenido);
-            pnl_Inicio.Dock = DockStyle.Fill;
-            pnl_Inicio.Location = new Point(0, 0);
-            pnl_Inicio.Name = "pnl_Inicio";
-            pnl_Inicio.Size = new Size(1098, 722);
-            pnl_Inicio.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.FromArgb(66, 66, 76);
-            panel4.Controls.Add(label4);
-            panel4.Location = new Point(36, 178);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(250, 206);
-            panel4.TabIndex = 16;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(17, 17);
-            label4.Name = "label4";
-            label4.Size = new Size(144, 32);
-            label4.TabIndex = 15;
-            label4.Text = "Ingresos";
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(66, 66, 76);
-            panel3.Controls.Add(label3);
-            panel3.Location = new Point(817, 444);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(250, 206);
-            panel3.TabIndex = 12;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(21, 20);
-            label3.Name = "label3";
-            label3.Size = new Size(115, 32);
-            label3.TabIndex = 15;
-            label3.Text = "Ventas";
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(66, 66, 76);
-            panel2.Controls.Add(label2);
-            panel2.Location = new Point(420, 444);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(250, 206);
-            panel2.TabIndex = 12;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(17, 20);
-            label2.Name = "label2";
-            label2.Size = new Size(163, 32);
-            label2.TabIndex = 14;
-            label2.Text = "Productos";
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(66, 66, 76);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(36, 444);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(250, 206);
-            panel1.TabIndex = 11;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(17, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(136, 32);
-            label1.TabIndex = 13;
-            label1.Text = "Clientes";
-            // 
-            // lbl_Inicio
-            // 
-            lbl_Inicio.AutoSize = true;
-            lbl_Inicio.Font = new Font("Lucida Sans", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_Inicio.ForeColor = Color.White;
-            lbl_Inicio.Location = new Point(36, 29);
-            lbl_Inicio.Name = "lbl_Inicio";
-            lbl_Inicio.Size = new Size(114, 39);
-            lbl_Inicio.TabIndex = 10;
-            lbl_Inicio.Text = "Inicio";
-            // 
-            // pctb_ZnakeLogo
-            // 
-            pctb_ZnakeLogo.Image = Properties.Resources.SnakeLogo1;
-            pctb_ZnakeLogo.Location = new Point(787, 29);
-            pctb_ZnakeLogo.Name = "pctb_ZnakeLogo";
-            pctb_ZnakeLogo.Size = new Size(280, 280);
-            pctb_ZnakeLogo.SizeMode = PictureBoxSizeMode.StretchImage;
-            pctb_ZnakeLogo.TabIndex = 9;
-            pctb_ZnakeLogo.TabStop = false;
-            // 
-            // lbl_Bienvenido
-            // 
-            lbl_Bienvenido.AutoSize = true;
-            lbl_Bienvenido.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_Bienvenido.ForeColor = Color.White;
-            lbl_Bienvenido.Location = new Point(36, 88);
-            lbl_Bienvenido.Name = "lbl_Bienvenido";
-            lbl_Bienvenido.Size = new Size(328, 32);
-            lbl_Bienvenido.TabIndex = 9;
-            lbl_Bienvenido.Text = "Bienvenido de Nuevo";
-            // 
             // pnl_Inventario
             // 
             pnl_Inventario.BackColor = Color.FromArgb(40, 40, 47);
@@ -1056,10 +1097,9 @@
             pnl_Inventario.Controls.Add(pictureBox4);
             pnl_Inventario.Controls.Add(label14);
             pnl_Inventario.Controls.Add(label15);
-            pnl_Inventario.Dock = DockStyle.Fill;
-            pnl_Inventario.Location = new Point(0, 0);
+            pnl_Inventario.Location = new Point(371, 326);
             pnl_Inventario.Name = "pnl_Inventario";
-            pnl_Inventario.Size = new Size(1098, 722);
+            pnl_Inventario.Size = new Size(139, 148);
             pnl_Inventario.TabIndex = 27;
             // 
             // poisonDataGridView4
@@ -1205,10 +1245,9 @@
             pnl_Ventas.Controls.Add(label11);
             pnl_Ventas.Controls.Add(label10);
             pnl_Ventas.Controls.Add(label9);
-            pnl_Ventas.Dock = DockStyle.Fill;
-            pnl_Ventas.Location = new Point(0, 0);
+            pnl_Ventas.Location = new Point(64, 292);
             pnl_Ventas.Name = "pnl_Ventas";
-            pnl_Ventas.Size = new Size(1098, 722);
+            pnl_Ventas.Size = new Size(166, 148);
             pnl_Ventas.TabIndex = 20;
             // 
             // pictureBox3
@@ -1411,7 +1450,7 @@
             label9.TabIndex = 13;
             label9.Text = "Ventas";
             // 
-            // Menu
+            // MenuAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -1423,24 +1462,18 @@
             FormBorderStyle = FormBorderStyle.None;
             MaximumSize = new Size(1920, 1020);
             MinimumSize = new Size(190, 40);
-            Name = "Menu";
+            Name = "MenuAdmin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
+            Load += Menu_Load;
             pnl_Menu.ResumeLayout(false);
             pnl_Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pctb_Znake).EndInit();
             pnl_Contenido.ResumeLayout(false);
-            pnl_Configuracion.ResumeLayout(false);
-            pnl_Configuracion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            pnl_Clientes.ResumeLayout(false);
-            pnl_Clientes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)poisonDataGridView2).EndInit();
             pnl_Productos.ResumeLayout(false);
             pnl_Productos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)poisonDataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProductos).EndInit();
             pnl_Inicio.ResumeLayout(false);
             pnl_Inicio.PerformLayout();
             panel4.ResumeLayout(false);
@@ -1452,6 +1485,13 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pctb_ZnakeLogo).EndInit();
+            pnl_Configuracion.ResumeLayout(false);
+            pnl_Configuracion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            pnl_Clientes.ResumeLayout(false);
+            pnl_Clientes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)poisonDataGridView2).EndInit();
             pnl_Inventario.ResumeLayout(false);
             pnl_Inventario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)poisonDataGridView4).EndInit();
@@ -1491,20 +1531,19 @@
         private Panel panel2;
         private Label label2;
         private Label label1;
-        private ReaLTaiizor.Controls.HopeButton hopeButton2;
-        private ReaLTaiizor.Controls.HopeTextBox hopeTextBox1;
-        private ReaLTaiizor.Controls.HopeButton hopeButton1;
+        private ReaLTaiizor.Controls.HopeButton btnAgregarNuevoProducto;
+        private ReaLTaiizor.Controls.HopeTextBox txtbBuscarProducto;
+        private ReaLTaiizor.Controls.HopeButton btnBuscarProducto;
         private Label label6;
         private Label label5;
-        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
-        private ReaLTaiizor.Controls.HopeComboBox hopeComboBox1;
+        private ReaLTaiizor.Controls.PoisonDataGridView dgvProductos;
         private Panel pnl_Clientes;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox2;
         private Label label8;
         private Label label7;
         private PictureBox pictureBox1;
         private ReaLTaiizor.Controls.HopeButton hopeButton4;
-        private ReaLTaiizor.Controls.HopeButton hopeButton3;
+        private ReaLTaiizor.Controls.HopeButton btnEliminar;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.HopeButton hopeButton7;
         private ReaLTaiizor.Controls.HopeButton hopeButton6;
@@ -1544,5 +1583,9 @@
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox4;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox6;
         private ReaLTaiizor.Controls.HopeButton hopeButton11;
+        private Label lblTotalIngresos;
+        private Label lblTotalClientes;
+        private Label lblTotalVentas;
+        private Label lblTotalProductos;
     }
 }
