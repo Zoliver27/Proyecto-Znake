@@ -1,39 +1,50 @@
-﻿using Entidades_Znake;
-using Datos_SQLConnection__Znake;
-using System.Data;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Datos;
+using Entidades_Znake;
 
 namespace Logica_Znake
 {
     public class LogicaAdmin
     {
-        private readonly AdminTabla adminTabla = new AdminTabla();
-        public string RegistrarAdministrador(Entidad_Administrador admin)
+        public async Task<IEnumerable<Admin_Ent>> ObtenerTodosAsync()
         {
-            if (string.IsNullOrWhiteSpace(admin.nombre_Admin))
-            {
-                return "El nombre es obligatorio";
-            }
-            if (string.IsNullOrWhiteSpace(admin.email_Admin) || !admin.email_Admin.Contains("@"))
-            {
-                return "El email es obligatorio";
-            }
-            if (admin.edad_Admin < 18 || admin.edad_Admin > 90)
-            {
-                return "La edad debe estar en un rango valido (18-90)";
-            }
-            try
-            {
-                adminTabla.CrearValores(admin);
-                return "OK";
-            }
-            catch (Exception ex)
-            {
-                return $"Error al registrar el administrador: {ex.Message}";
-            }
+            using var contexto = new AppDbContext();
+            IRepositorio<Admin_Ent> repo = new Repositorio<Admin_Ent>(contexto);
+            return await repo.ObtenerTodosAsync();
         }
-        public DataTable ObtenerValores()
+
+        public async Task<Admin_Ent?> ObtenerPorIdAsync(int id)
         {
-            return adminTabla.LeerValores();
+            if (id <= 0) throw new Exception("ID no válido.");
+            using var contexto = new AppDbContext();
+            IRepositorio<Admin_Ent> repo = new Repositorio<Admin_Ent>(contexto);
+            return await repo.ObtenerPorIdAsync(id);
+        }
+
+        public async Task CrearAsync(Admin_Ent entidad)
+        {
+            if (string.IsNullOrWhiteSpace(entidad.Nombre)) throw new Exception("El nombre del administrador es obligatorio.");
+            if (entidad.Id_Usuario <= 0) throw new Exception("Debe asociarse a un usuario válido.");
+            using var contexto = new AppDbContext();
+            IRepositorio<Admin_Ent> repo = new Repositorio<Admin_Ent>(contexto);
+            await repo.CrearAsync(entidad);
+        }
+
+        public async Task ActualizarAsync(Admin_Ent entidad)
+        {
+            if (entidad.Id_Admin <= 0) throw new Exception("ID de administrador no válido.");
+            using var contexto = new AppDbContext();
+            IRepositorio<Admin_Ent> repo = new Repositorio<Admin_Ent>(contexto);
+            await repo.ActualizarAsync(entidad);
+        }
+
+        public async Task EliminarAsync(int id)
+        {
+            if (id <= 0) throw new Exception("ID de administrador inválido.");
+            using var contexto = new AppDbContext();
+            IRepositorio<Admin_Ent> repo = new Repositorio<Admin_Ent>(contexto);
+            await repo.EliminarAsync(id);
         }
     }
 }
