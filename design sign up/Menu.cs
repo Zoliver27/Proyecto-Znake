@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logica_Znake;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,11 @@ namespace design_sign_up
 {
     public partial class Menu : Form
     {
+        //---Para el apartado de inicio---
+        private readonly LogicaVenta _logicaVenta = new LogicaVenta();
+        private readonly LogicaCliente _logicaCliente = new LogicaCliente();
+        private readonly LogicaProducto _logicaProducto = new LogicaProducto();
+        //---Estara Disponible Para todos los Roles---
         private void Cambiar_Panel()
         {
             pnl_Inicio.Visible = false;
@@ -21,6 +27,7 @@ namespace design_sign_up
             pnl_Inventario.Visible = false;
             pnl_Configuracion.Visible = false;
         }
+
         public Menu()
         {
             InitializeComponent();
@@ -67,6 +74,36 @@ namespace design_sign_up
             Sign_In SI = new Sign_In();
             SI.Show();
             this.Close();
+        }
+
+
+        private async void Menu_Load(object sender, EventArgs e)
+        {
+            await CargarMetricasAsync();
+        }
+        public async Task CargarMetricasAsync() //---Para el boton de Inicio---
+        {
+            try
+            {
+                var ventas = await _logicaVenta.ObtenerTodosAsync();
+                var clientes = await _logicaCliente.ObtenerTodosAsync();
+                var productos = await _logicaProducto.ObtenerTodosAsync();
+
+                decimal totalIngresos = ventas?.Sum(v => v.Total) ?? 0; // Asumiendo que la entidad Venta tiene la propiedad Total
+                int totalClientes = clientes?.Count() ?? 0;
+                int totalProductos = productos?.Count() ?? 0;
+                int totalVentas = ventas?.Count() ?? 0;
+
+                // 3. Asignar valores a los Labels
+                lblTotalIngresos.Text = $"{totalIngresos:C2}"; // O $"{totalIngresos:N2} Bs"
+                lblTotalClientes.Text = totalClientes.ToString("N0");
+                lblTotalProductos.Text = totalProductos.ToString("N0");
+                lblTotalVentas.Text = totalVentas.ToString("N0");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar las métricas: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

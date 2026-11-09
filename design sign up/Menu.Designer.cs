@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle7 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle8 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle9 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle10 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle11 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle12 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle13 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle14 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle15 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle16 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle17 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle18 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle19 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle20 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle21 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle22 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle23 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle24 = new DataGridViewCellStyle();
             frm_Menu = new ReaLTaiizor.Forms.HopeForm();
             pnl_Menu = new Panel();
             lbl_Znake = new Label();
@@ -52,6 +52,22 @@
             btn_Productos = new ReaLTaiizor.Controls.HopeButton();
             btn_Inicio = new ReaLTaiizor.Controls.HopeButton();
             pnl_Contenido = new Panel();
+            pnl_Inicio = new Panel();
+            panel4 = new Panel();
+            lblTotalIngresos = new Label();
+            label4 = new Label();
+            panel3 = new Panel();
+            lblTotalVentas = new Label();
+            label3 = new Label();
+            panel2 = new Panel();
+            lblTotalProductos = new Label();
+            label2 = new Label();
+            panel1 = new Panel();
+            lblTotalClientes = new Label();
+            label1 = new Label();
+            lbl_Inicio = new Label();
+            pctb_ZnakeLogo = new PictureBox();
+            lbl_Bienvenido = new Label();
             pnl_Configuracion = new Panel();
             hopeButton11 = new ReaLTaiizor.Controls.HopeButton();
             hopeTextBox6 = new ReaLTaiizor.Controls.HopeTextBox();
@@ -77,25 +93,13 @@
             pictureBox1 = new PictureBox();
             hopeButton4 = new ReaLTaiizor.Controls.HopeButton();
             hopeButton3 = new ReaLTaiizor.Controls.HopeButton();
-            poisonDataGridView1 = new ReaLTaiizor.Controls.PoisonDataGridView();
+            dgvProductos = new ReaLTaiizor.Controls.PoisonDataGridView();
             hopeComboBox1 = new ReaLTaiizor.Controls.HopeComboBox();
             hopeButton2 = new ReaLTaiizor.Controls.HopeButton();
             hopeTextBox1 = new ReaLTaiizor.Controls.HopeTextBox();
             hopeButton1 = new ReaLTaiizor.Controls.HopeButton();
             label6 = new Label();
             label5 = new Label();
-            pnl_Inicio = new Panel();
-            panel4 = new Panel();
-            label4 = new Label();
-            panel3 = new Panel();
-            label3 = new Label();
-            panel2 = new Panel();
-            label2 = new Label();
-            panel1 = new Panel();
-            label1 = new Label();
-            lbl_Inicio = new Label();
-            pctb_ZnakeLogo = new PictureBox();
-            lbl_Bienvenido = new Label();
             pnl_Inventario = new Panel();
             poisonDataGridView4 = new ReaLTaiizor.Controls.PoisonDataGridView();
             hopeComboBox5 = new ReaLTaiizor.Controls.HopeComboBox();
@@ -121,6 +125,12 @@
             pnl_Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pctb_Znake).BeginInit();
             pnl_Contenido.SuspendLayout();
+            pnl_Inicio.SuspendLayout();
+            panel4.SuspendLayout();
+            panel3.SuspendLayout();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pctb_ZnakeLogo).BeginInit();
             pnl_Configuracion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             pnl_Clientes.SuspendLayout();
@@ -128,13 +138,7 @@
             ((System.ComponentModel.ISupportInitialize)poisonDataGridView2).BeginInit();
             pnl_Productos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)poisonDataGridView1).BeginInit();
-            pnl_Inicio.SuspendLayout();
-            panel4.SuspendLayout();
-            panel3.SuspendLayout();
-            panel2.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pctb_ZnakeLogo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProductos).BeginInit();
             pnl_Inventario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)poisonDataGridView4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -339,16 +343,191 @@
             // 
             // pnl_Contenido
             // 
-            pnl_Contenido.Controls.Add(pnl_Configuracion);
-            pnl_Contenido.Controls.Add(pnl_Clientes);
             pnl_Contenido.Controls.Add(pnl_Productos);
             pnl_Contenido.Controls.Add(pnl_Inicio);
+            pnl_Contenido.Controls.Add(pnl_Configuracion);
+            pnl_Contenido.Controls.Add(pnl_Clientes);
             pnl_Contenido.Controls.Add(pnl_Inventario);
             pnl_Contenido.Controls.Add(pnl_Ventas);
             pnl_Contenido.Location = new Point(274, 56);
             pnl_Contenido.Name = "pnl_Contenido";
             pnl_Contenido.Size = new Size(1098, 722);
             pnl_Contenido.TabIndex = 2;
+            // 
+            // pnl_Inicio
+            // 
+            pnl_Inicio.BackColor = Color.FromArgb(40, 40, 47);
+            pnl_Inicio.Controls.Add(panel4);
+            pnl_Inicio.Controls.Add(panel3);
+            pnl_Inicio.Controls.Add(panel2);
+            pnl_Inicio.Controls.Add(panel1);
+            pnl_Inicio.Controls.Add(lbl_Inicio);
+            pnl_Inicio.Controls.Add(pctb_ZnakeLogo);
+            pnl_Inicio.Controls.Add(lbl_Bienvenido);
+            pnl_Inicio.Location = new Point(103, 72);
+            pnl_Inicio.Name = "pnl_Inicio";
+            pnl_Inicio.Size = new Size(81, 132);
+            pnl_Inicio.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(66, 66, 76);
+            panel4.Controls.Add(lblTotalIngresos);
+            panel4.Controls.Add(label4);
+            panel4.Location = new Point(36, 178);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(250, 206);
+            panel4.TabIndex = 16;
+            // 
+            // lblTotalIngresos
+            // 
+            lblTotalIngresos.AutoSize = true;
+            lblTotalIngresos.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalIngresos.ForeColor = Color.White;
+            lblTotalIngresos.Location = new Point(28, 95);
+            lblTotalIngresos.Name = "lblTotalIngresos";
+            lblTotalIngresos.Size = new Size(75, 32);
+            lblTotalIngresos.TabIndex = 16;
+            lblTotalIngresos.Text = "0 Bs";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(17, 17);
+            label4.Name = "label4";
+            label4.Size = new Size(144, 32);
+            label4.TabIndex = 15;
+            label4.Text = "Ingresos";
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(66, 66, 76);
+            panel3.Controls.Add(lblTotalVentas);
+            panel3.Controls.Add(label3);
+            panel3.Location = new Point(817, 444);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(250, 206);
+            panel3.TabIndex = 12;
+            // 
+            // lblTotalVentas
+            // 
+            lblTotalVentas.AutoSize = true;
+            lblTotalVentas.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalVentas.ForeColor = Color.White;
+            lblTotalVentas.Location = new Point(29, 102);
+            lblTotalVentas.Name = "lblTotalVentas";
+            lblTotalVentas.Size = new Size(32, 32);
+            lblTotalVentas.TabIndex = 19;
+            lblTotalVentas.Text = "0";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(21, 20);
+            label3.Name = "label3";
+            label3.Size = new Size(115, 32);
+            label3.TabIndex = 15;
+            label3.Text = "Ventas";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(66, 66, 76);
+            panel2.Controls.Add(lblTotalProductos);
+            panel2.Controls.Add(label2);
+            panel2.Location = new Point(420, 444);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(250, 206);
+            panel2.TabIndex = 12;
+            // 
+            // lblTotalProductos
+            // 
+            lblTotalProductos.AutoSize = true;
+            lblTotalProductos.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalProductos.ForeColor = Color.White;
+            lblTotalProductos.Location = new Point(29, 92);
+            lblTotalProductos.Name = "lblTotalProductos";
+            lblTotalProductos.Size = new Size(32, 32);
+            lblTotalProductos.TabIndex = 18;
+            lblTotalProductos.Text = "0";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(17, 20);
+            label2.Name = "label2";
+            label2.Size = new Size(163, 32);
+            label2.TabIndex = 14;
+            label2.Text = "Productos";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(66, 66, 76);
+            panel1.Controls.Add(lblTotalClientes);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(36, 444);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 206);
+            panel1.TabIndex = 11;
+            // 
+            // lblTotalClientes
+            // 
+            lblTotalClientes.AutoSize = true;
+            lblTotalClientes.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotalClientes.ForeColor = Color.White;
+            lblTotalClientes.Location = new Point(28, 92);
+            lblTotalClientes.Name = "lblTotalClientes";
+            lblTotalClientes.Size = new Size(32, 32);
+            lblTotalClientes.TabIndex = 17;
+            lblTotalClientes.Text = "0";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(17, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 32);
+            label1.TabIndex = 13;
+            label1.Text = "Clientes";
+            // 
+            // lbl_Inicio
+            // 
+            lbl_Inicio.AutoSize = true;
+            lbl_Inicio.Font = new Font("Lucida Sans", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_Inicio.ForeColor = Color.White;
+            lbl_Inicio.Location = new Point(36, 29);
+            lbl_Inicio.Name = "lbl_Inicio";
+            lbl_Inicio.Size = new Size(114, 39);
+            lbl_Inicio.TabIndex = 10;
+            lbl_Inicio.Text = "Inicio";
+            // 
+            // pctb_ZnakeLogo
+            // 
+            pctb_ZnakeLogo.Image = Properties.Resources.SnakeLogo1;
+            pctb_ZnakeLogo.Location = new Point(787, 29);
+            pctb_ZnakeLogo.Name = "pctb_ZnakeLogo";
+            pctb_ZnakeLogo.Size = new Size(280, 280);
+            pctb_ZnakeLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            pctb_ZnakeLogo.TabIndex = 9;
+            pctb_ZnakeLogo.TabStop = false;
+            // 
+            // lbl_Bienvenido
+            // 
+            lbl_Bienvenido.AutoSize = true;
+            lbl_Bienvenido.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_Bienvenido.ForeColor = Color.White;
+            lbl_Bienvenido.Location = new Point(36, 88);
+            lbl_Bienvenido.Name = "lbl_Bienvenido";
+            lbl_Bienvenido.Size = new Size(328, 32);
+            lbl_Bienvenido.TabIndex = 9;
+            lbl_Bienvenido.Text = "Bienvenido de Nuevo";
             // 
             // pnl_Configuracion
             // 
@@ -364,10 +543,9 @@
             pnl_Configuracion.Controls.Add(pictureBox5);
             pnl_Configuracion.Controls.Add(label16);
             pnl_Configuracion.Controls.Add(label17);
-            pnl_Configuracion.Dock = DockStyle.Fill;
-            pnl_Configuracion.Location = new Point(0, 0);
+            pnl_Configuracion.Location = new Point(683, 326);
             pnl_Configuracion.Name = "pnl_Configuracion";
-            pnl_Configuracion.Size = new Size(1098, 722);
+            pnl_Configuracion.Size = new Size(195, 177);
             pnl_Configuracion.TabIndex = 34;
             // 
             // hopeButton11
@@ -545,10 +723,9 @@
             pnl_Clientes.Controls.Add(hopeTextBox2);
             pnl_Clientes.Controls.Add(label8);
             pnl_Clientes.Controls.Add(label7);
-            pnl_Clientes.Dock = DockStyle.Fill;
-            pnl_Clientes.Location = new Point(0, 0);
+            pnl_Clientes.Location = new Point(656, 56);
             pnl_Clientes.Name = "pnl_Clientes";
-            pnl_Clientes.Size = new Size(1098, 722);
+            pnl_Clientes.Size = new Size(189, 148);
             pnl_Clientes.TabIndex = 19;
             pnl_Clientes.Visible = false;
             // 
@@ -626,37 +803,37 @@
             poisonDataGridView2.BorderStyle = BorderStyle.None;
             poisonDataGridView2.CellBorderStyle = DataGridViewCellBorderStyle.None;
             poisonDataGridView2.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle13.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle13.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle13.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle13.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle13.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             poisonDataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            poisonDataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle14.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle14.ForeColor = Color.FromArgb(136, 136, 136);
+            dataGridViewCellStyle14.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle14.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle14.WrapMode = DataGridViewTriState.False;
+            poisonDataGridView2.DefaultCellStyle = dataGridViewCellStyle14;
             poisonDataGridView2.EnableHeadersVisualStyles = false;
             poisonDataGridView2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             poisonDataGridView2.GridColor = Color.FromArgb(255, 255, 255);
             poisonDataGridView2.Location = new Point(36, 230);
             poisonDataGridView2.Name = "poisonDataGridView2";
             poisonDataGridView2.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle15.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle15.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle15.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle15.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle15.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
             poisonDataGridView2.RowHeadersWidth = 51;
             poisonDataGridView2.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             poisonDataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -715,7 +892,7 @@
             pnl_Productos.Controls.Add(pictureBox1);
             pnl_Productos.Controls.Add(hopeButton4);
             pnl_Productos.Controls.Add(hopeButton3);
-            pnl_Productos.Controls.Add(poisonDataGridView1);
+            pnl_Productos.Controls.Add(dgvProductos);
             pnl_Productos.Controls.Add(hopeComboBox1);
             pnl_Productos.Controls.Add(hopeButton2);
             pnl_Productos.Controls.Add(hopeTextBox1);
@@ -777,49 +954,49 @@
             hopeButton3.TextColor = Color.FromArgb(235, 235, 240);
             hopeButton3.WarningColor = Color.FromArgb(200, 145, 50);
             // 
-            // poisonDataGridView1
+            // dgvProductos
             // 
-            poisonDataGridView1.AllowUserToResizeRows = false;
-            poisonDataGridView1.BackgroundColor = Color.FromArgb(33, 33, 37);
-            poisonDataGridView1.BorderStyle = BorderStyle.None;
-            poisonDataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.None;
-            poisonDataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            poisonDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle5.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
-            poisonDataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
-            poisonDataGridView1.EnableHeadersVisualStyles = false;
-            poisonDataGridView1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            poisonDataGridView1.GridColor = Color.FromArgb(255, 255, 255);
-            poisonDataGridView1.Location = new Point(39, 273);
-            poisonDataGridView1.Name = "poisonDataGridView1";
-            poisonDataGridView1.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            poisonDataGridView1.RowHeadersWidth = 51;
-            poisonDataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            poisonDataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            poisonDataGridView1.Size = new Size(1028, 366);
-            poisonDataGridView1.TabIndex = 16;
+            dgvProductos.AllowUserToResizeRows = false;
+            dgvProductos.BackgroundColor = Color.FromArgb(33, 33, 37);
+            dgvProductos.BorderStyle = BorderStyle.None;
+            dgvProductos.CellBorderStyle = DataGridViewCellBorderStyle.None;
+            dgvProductos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle16.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle16.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle16.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle16.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle16.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle16.WrapMode = DataGridViewTriState.True;
+            dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            dgvProductos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle17.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle17.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle17.ForeColor = Color.FromArgb(136, 136, 136);
+            dataGridViewCellStyle17.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle17.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle17.WrapMode = DataGridViewTriState.False;
+            dgvProductos.DefaultCellStyle = dataGridViewCellStyle17;
+            dgvProductos.EnableHeadersVisualStyles = false;
+            dgvProductos.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dgvProductos.GridColor = Color.FromArgb(255, 255, 255);
+            dgvProductos.Location = new Point(39, 273);
+            dgvProductos.Name = "dgvProductos";
+            dgvProductos.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle18.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle18.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle18.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle18.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle18.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle18.WrapMode = DataGridViewTriState.True;
+            dgvProductos.RowHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dgvProductos.RowHeadersWidth = 51;
+            dgvProductos.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dgvProductos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvProductos.Size = new Size(1028, 366);
+            dgvProductos.TabIndex = 16;
             // 
             // hopeComboBox1
             // 
@@ -918,134 +1095,6 @@
             label5.TabIndex = 11;
             label5.Text = "Productos";
             // 
-            // pnl_Inicio
-            // 
-            pnl_Inicio.BackColor = Color.FromArgb(40, 40, 47);
-            pnl_Inicio.Controls.Add(panel4);
-            pnl_Inicio.Controls.Add(panel3);
-            pnl_Inicio.Controls.Add(panel2);
-            pnl_Inicio.Controls.Add(panel1);
-            pnl_Inicio.Controls.Add(lbl_Inicio);
-            pnl_Inicio.Controls.Add(pctb_ZnakeLogo);
-            pnl_Inicio.Controls.Add(lbl_Bienvenido);
-            pnl_Inicio.Dock = DockStyle.Fill;
-            pnl_Inicio.Location = new Point(0, 0);
-            pnl_Inicio.Name = "pnl_Inicio";
-            pnl_Inicio.Size = new Size(1098, 722);
-            pnl_Inicio.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.FromArgb(66, 66, 76);
-            panel4.Controls.Add(label4);
-            panel4.Location = new Point(36, 178);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(250, 206);
-            panel4.TabIndex = 16;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(17, 17);
-            label4.Name = "label4";
-            label4.Size = new Size(144, 32);
-            label4.TabIndex = 15;
-            label4.Text = "Ingresos";
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(66, 66, 76);
-            panel3.Controls.Add(label3);
-            panel3.Location = new Point(817, 444);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(250, 206);
-            panel3.TabIndex = 12;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(21, 20);
-            label3.Name = "label3";
-            label3.Size = new Size(115, 32);
-            label3.TabIndex = 15;
-            label3.Text = "Ventas";
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(66, 66, 76);
-            panel2.Controls.Add(label2);
-            panel2.Location = new Point(420, 444);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(250, 206);
-            panel2.TabIndex = 12;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(17, 20);
-            label2.Name = "label2";
-            label2.Size = new Size(163, 32);
-            label2.TabIndex = 14;
-            label2.Text = "Productos";
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(66, 66, 76);
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(36, 444);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(250, 206);
-            panel1.TabIndex = 11;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(17, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(136, 32);
-            label1.TabIndex = 13;
-            label1.Text = "Clientes";
-            // 
-            // lbl_Inicio
-            // 
-            lbl_Inicio.AutoSize = true;
-            lbl_Inicio.Font = new Font("Lucida Sans", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_Inicio.ForeColor = Color.White;
-            lbl_Inicio.Location = new Point(36, 29);
-            lbl_Inicio.Name = "lbl_Inicio";
-            lbl_Inicio.Size = new Size(114, 39);
-            lbl_Inicio.TabIndex = 10;
-            lbl_Inicio.Text = "Inicio";
-            // 
-            // pctb_ZnakeLogo
-            // 
-            pctb_ZnakeLogo.Image = Properties.Resources.SnakeLogo1;
-            pctb_ZnakeLogo.Location = new Point(787, 29);
-            pctb_ZnakeLogo.Name = "pctb_ZnakeLogo";
-            pctb_ZnakeLogo.Size = new Size(280, 280);
-            pctb_ZnakeLogo.SizeMode = PictureBoxSizeMode.StretchImage;
-            pctb_ZnakeLogo.TabIndex = 9;
-            pctb_ZnakeLogo.TabStop = false;
-            // 
-            // lbl_Bienvenido
-            // 
-            lbl_Bienvenido.AutoSize = true;
-            lbl_Bienvenido.Font = new Font("Lucida Sans", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_Bienvenido.ForeColor = Color.White;
-            lbl_Bienvenido.Location = new Point(36, 88);
-            lbl_Bienvenido.Name = "lbl_Bienvenido";
-            lbl_Bienvenido.Size = new Size(328, 32);
-            lbl_Bienvenido.TabIndex = 9;
-            lbl_Bienvenido.Text = "Bienvenido de Nuevo";
-            // 
             // pnl_Inventario
             // 
             pnl_Inventario.BackColor = Color.FromArgb(40, 40, 47);
@@ -1056,10 +1105,9 @@
             pnl_Inventario.Controls.Add(pictureBox4);
             pnl_Inventario.Controls.Add(label14);
             pnl_Inventario.Controls.Add(label15);
-            pnl_Inventario.Dock = DockStyle.Fill;
-            pnl_Inventario.Location = new Point(0, 0);
+            pnl_Inventario.Location = new Point(371, 326);
             pnl_Inventario.Name = "pnl_Inventario";
-            pnl_Inventario.Size = new Size(1098, 722);
+            pnl_Inventario.Size = new Size(139, 148);
             pnl_Inventario.TabIndex = 27;
             // 
             // poisonDataGridView4
@@ -1069,37 +1117,37 @@
             poisonDataGridView4.BorderStyle = BorderStyle.None;
             poisonDataGridView4.CellBorderStyle = DataGridViewCellBorderStyle.None;
             poisonDataGridView4.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle7.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle7.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle7.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle7.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle19.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle19.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle19.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle19.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle19.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle19.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
             poisonDataGridView4.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle8.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle8.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle8.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle8.WrapMode = DataGridViewTriState.False;
-            poisonDataGridView4.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle20.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle20.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle20.ForeColor = Color.FromArgb(136, 136, 136);
+            dataGridViewCellStyle20.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle20.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle20.WrapMode = DataGridViewTriState.False;
+            poisonDataGridView4.DefaultCellStyle = dataGridViewCellStyle20;
             poisonDataGridView4.EnableHeadersVisualStyles = false;
             poisonDataGridView4.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             poisonDataGridView4.GridColor = Color.FromArgb(255, 255, 255);
             poisonDataGridView4.Location = new Point(39, 230);
             poisonDataGridView4.Name = "poisonDataGridView4";
             poisonDataGridView4.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle9.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle9.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle9.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle9.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle21.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle21.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle21.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle21.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle21.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle21.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView4.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
             poisonDataGridView4.RowHeadersWidth = 51;
             poisonDataGridView4.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             poisonDataGridView4.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -1205,10 +1253,9 @@
             pnl_Ventas.Controls.Add(label11);
             pnl_Ventas.Controls.Add(label10);
             pnl_Ventas.Controls.Add(label9);
-            pnl_Ventas.Dock = DockStyle.Fill;
-            pnl_Ventas.Location = new Point(0, 0);
+            pnl_Ventas.Location = new Point(64, 292);
             pnl_Ventas.Name = "pnl_Ventas";
-            pnl_Ventas.Size = new Size(1098, 722);
+            pnl_Ventas.Size = new Size(166, 148);
             pnl_Ventas.TabIndex = 20;
             // 
             // pictureBox3
@@ -1228,37 +1275,37 @@
             poisonDataGridView3.BorderStyle = BorderStyle.None;
             poisonDataGridView3.CellBorderStyle = DataGridViewCellBorderStyle.None;
             poisonDataGridView3.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle10.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle10.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle10.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle10.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle22.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle22.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle22.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle22.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle22.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle22.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             poisonDataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle11.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle11.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle11.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle11.WrapMode = DataGridViewTriState.False;
-            poisonDataGridView3.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle23.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle23.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle23.ForeColor = Color.FromArgb(136, 136, 136);
+            dataGridViewCellStyle23.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle23.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle23.WrapMode = DataGridViewTriState.False;
+            poisonDataGridView3.DefaultCellStyle = dataGridViewCellStyle23;
             poisonDataGridView3.EnableHeadersVisualStyles = false;
             poisonDataGridView3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             poisonDataGridView3.GridColor = Color.FromArgb(255, 255, 255);
             poisonDataGridView3.Location = new Point(39, 304);
             poisonDataGridView3.Name = "poisonDataGridView3";
             poisonDataGridView3.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle12.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle12.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle12.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle12.WrapMode = DataGridViewTriState.True;
-            poisonDataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle24.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle24.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle24.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle24.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle24.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle24.WrapMode = DataGridViewTriState.True;
+            poisonDataGridView3.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             poisonDataGridView3.RowHeadersWidth = 51;
             poisonDataGridView3.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             poisonDataGridView3.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -1426,21 +1473,11 @@
             Name = "Menu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
+            Load += Menu_Load;
             pnl_Menu.ResumeLayout(false);
             pnl_Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pctb_Znake).EndInit();
             pnl_Contenido.ResumeLayout(false);
-            pnl_Configuracion.ResumeLayout(false);
-            pnl_Configuracion.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            pnl_Clientes.ResumeLayout(false);
-            pnl_Clientes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)poisonDataGridView2).EndInit();
-            pnl_Productos.ResumeLayout(false);
-            pnl_Productos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)poisonDataGridView1).EndInit();
             pnl_Inicio.ResumeLayout(false);
             pnl_Inicio.PerformLayout();
             panel4.ResumeLayout(false);
@@ -1452,6 +1489,17 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pctb_ZnakeLogo).EndInit();
+            pnl_Configuracion.ResumeLayout(false);
+            pnl_Configuracion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            pnl_Clientes.ResumeLayout(false);
+            pnl_Clientes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)poisonDataGridView2).EndInit();
+            pnl_Productos.ResumeLayout(false);
+            pnl_Productos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvProductos).EndInit();
             pnl_Inventario.ResumeLayout(false);
             pnl_Inventario.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)poisonDataGridView4).EndInit();
@@ -1496,7 +1544,7 @@
         private ReaLTaiizor.Controls.HopeButton hopeButton1;
         private Label label6;
         private Label label5;
-        private ReaLTaiizor.Controls.PoisonDataGridView poisonDataGridView1;
+        private ReaLTaiizor.Controls.PoisonDataGridView dgvProductos;
         private ReaLTaiizor.Controls.HopeComboBox hopeComboBox1;
         private Panel pnl_Clientes;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox2;
@@ -1544,5 +1592,9 @@
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox4;
         private ReaLTaiizor.Controls.HopeTextBox hopeTextBox6;
         private ReaLTaiizor.Controls.HopeButton hopeButton11;
+        private Label lblTotalIngresos;
+        private Label lblTotalClientes;
+        private Label lblTotalVentas;
+        private Label lblTotalProductos;
     }
 }
